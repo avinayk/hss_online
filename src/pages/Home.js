@@ -135,8 +135,8 @@ export default function Home() {
                 Australia
               </p>
               <div className="d-flex flex-sm-row flex-column gap-4 align-items-center gap-3">
-                <button className="view_product">View Products</button>
-                <button className="contact_sale">Contact Sales</button>
+                <Link to="/product" className="view_product">View Products</Link>
+                <Link to="/contact" className="contact_sale">Contact Sales</button>
               </div>
             </div>
           </div>
