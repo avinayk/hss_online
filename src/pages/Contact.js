@@ -31,52 +31,52 @@ export default function Contact() {
             <div className="col-12">
               <div className="row gy-4">
                 <div className="col-md-3">
-                  <div className="d-flex align-items-center gap-3 contact_call">
+                  <Link to="tel:+61894375388" className="d-flex align-items-center gap-3 contact_call">
                     <div className="contact_icon">
                       <svg xmlns="http://www.w3.org/2000/svg" height={'30'} viewBox="0 0 512 512"><path d="M497.4 361.8l-112-48a24 24 0 0 0 -28 6.9l-49.6 60.6A370.7 370.7 0 0 1 130.6 204.1l60.6-49.6a23.9 23.9 0 0 0 6.9-28l-48-112A24.2 24.2 0 0 0 122.6 .6l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.3 24.3 0 0 0 -14-27.6z" /></svg>
                     </div>
                     <div className="d-flex flex-column gap-1">
                       <h4>Call Us</h4>
-                      <Link to="tel:+61894375388">+61 8 9437 5388</Link>
+                      <p>+61 8 9437 5388</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
                 <div className="col-md-3">
-                  <div className="d-flex align-items-center gap-3 contact_call">
+                  <Link to="MailTo:sales@hssptyltd.com.au" className="d-flex align-items-center gap-3 contact_call">
                     <div className="contact_icon">
                       <svg xmlns="http://www.w3.org/2000/svg" height={'30'} viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" /></svg>
                     </div>
                     <div className="d-flex flex-column gap-1">
                       <h4>Email</h4>
-                      <Link to="MailTo:sales@hssptyltd.com.au">sales@hssptyltd.com.au
-                      </Link>
+                      <p>sales@hssptyltd.com.au
+                      </p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
                 <div className="col-md-3">
-                  <div className="d-flex align-items-center gap-3 contact_call">
+                  <Link to="/" className="d-flex align-items-center gap-3 contact_call">
                     <div className="contact_icon">
                       <svg xmlns="http://www.w3.org/2000/svg" height={'30'} viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" /></svg>
                     </div>
                     <div className="d-flex flex-column gap-1">
                       <h4>Location</h4>
-                      <Link to="/">8 Sparks Road
+                      <p>8 Sparks Road
                         Henderson WA 6166
-                      </Link>
+                      </p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
                 <div className="col-md-3">
-                  <div className="d-flex align-items-center gap-3 contact_call">
+                  <Link to="/" className="d-flex align-items-center gap-3 contact_call">
                     <div className="contact_icon">
                       <svg xmlns="http://www.w3.org/2000/svg" height={'30'} viewBox="0 0 512 512"><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9L0 168c0 13.3 10.7 24 24 24l110.1 0c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65 0-94.1c0-13.3-10.7-24-24-24z" /></svg>
                     </div>
                     <div className="d-flex flex-column gap-1">
                       <h4>Time</h4>
-                      <Link to="/">Monday to Friday 7:30 AM to 5:00 PM
-                      </Link>
+                      <p>Monday to Friday 7:30 AM to 5:00 PM
+                      </p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
