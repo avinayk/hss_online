@@ -4,6 +4,11 @@
 button.navbar-toggler {
   border: 1px solid $primary;
 }
+#navbarSupportedContent {
+  @include lg {
+    overflow: auto;
+  }
+}
 header {
   box-shadow: 3px -4px 16px 0px $primary;
 
