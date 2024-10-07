@@ -1150,7 +1150,10 @@ footer {
   .globe-container {
     height: 100%;
     width: 100%;
-
+    transform: scale(1.1);
+    @include sm {
+      transform: scale(1);
+    }
     canvas {
       width: 100% !important;
       height: 100% !important;

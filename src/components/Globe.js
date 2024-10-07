@@ -4,7 +4,7 @@ import ThreeGlobe from "three-globe";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import "../assets/style/main.css";
 import countries from "../assets/files/custom.geo.json";
-import lines from "../assets/files/line.json"; 
+import lines from "../assets/files/line.json";
 
 const Globe = () => {
   const globeContainerRef = useRef(null);
@@ -93,6 +93,12 @@ const Globe = () => {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableZoom = false;
 
+    // const logCameraPosition = () => {
+    //   console.log('Camera Position:', camera.position);
+    // };
+
+    // controls.addEventListener('change', logCameraPosition);
+
     const updateCameraPosition = () => {
       const width = window.innerWidth;
       let position;
@@ -102,21 +108,24 @@ const Globe = () => {
       } else if (width <= 1024) {
         position = { x: 110, y: -80, z: -110 };
       } else {
-        position = { x: 110, y: -80, z: -110 };
+        position = { x: 109.98, y: -79.98, z: -109.98 };
       }
-
       camera.position.set(position.x, position.y, position.z);
       camera.lookAt(globe.position);
+      console.log(camera.position)
     };
 
     updateCameraPosition();
+
 
     const animate = () => {
       requestAnimationFrame(animate);
       controls.update();
       renderer.render(scene, camera);
+
     };
     animate();
+
 
     const handleResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -133,7 +142,7 @@ const Globe = () => {
         container.removeChild(renderer.domElement);
       }
     };
-  }, []); 
+  }, []);
 
   return (
     <section className="d-block globe_main position-relative pb-5">
