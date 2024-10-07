@@ -1,0 +1,37 @@
+{
+  "type": "Maps",
+  "Maps": [
+    {
+      "text": "AU",
+      "size": 1.0,
+      "country": "Australia",
+      "city": "Nullarbor",
+      "lat": "-31.031589",
+      "Ing": "130.958447"
+    },
+    {
+      "text": "AU",
+      "size": 1.0,
+      "country": "Australia",
+      "city": "Kakadu",
+      "lat": "-13.058291",
+      "Ing": "132.392377"
+    },
+    {
+      "text": "AU",
+      "size": 1.0,
+      "country": "Australia",
+      "city": "Ex Dalgaranga ",
+      "lat": "-27.90605818291496",
+      "Ing": "116.9633591594943"
+    },
+    {
+      "text": "AU",
+      "size": 1.0,
+      "country": "Australia",
+      "city": "Hungerford",
+      "lat": "-29.235004740405383",
+      "Ing": "144.56747127312744"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+$primary: rgba(67, 111, 199, 1);
+$trans: 0.3s all ease-in-out;
+$white: #fff;
+$black: #000;
+$contact : "Nothing You Could Do", cursive;
+
+
+//! media queries
+@mixin xl {
+  @media only screen and (max-width: 1399.98px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media only screen and (max-width: 1199.98px) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media only screen and (max-width: 1089.98px) {
+    @content;
+  }
+}
+@mixin md {
+  @media only screen and (max-width: 991.98px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media only screen and (max-width: 767.98px) {
+    @content;
+  }
+}
+@mixin xs {
+  @media only screen and (max-width: 575.98px) {
+    @content;
+  }
+}
+@mixin cw($value) {
+  @media only screen and (max-width: $value) {
+    @content;
+  }
+}
+
