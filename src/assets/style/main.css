@@ -1069,6 +1069,12 @@ footer .top_btn p {
 .globe_main .globe-container {
   height: 100%;
   width: 100%;
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 767.98px) {
+  .globe_main .globe-container {
+    transform: scale(1);
+  }
 }
 .globe_main .globe-container canvas {
   width: 100% !important;
