@@ -121,9 +121,9 @@ export default function Home() {
                   <span className="home_animation"
                     key={index}
                     style={{
-                      marginRight: letter === " " ? "8px" : "0px", // Adjust margin for spaces
+                      marginRight: letter === " " ? "8px" : "0px", 
                       opacity: 0,
-                      animation: `fadeIn 0.3s ${index * 0.1}s forwards`,
+                      animation: `fadeIn 0.1s ${index * 0.05}s forwards`,
                     }}
                   >
                     {letter}
@@ -134,9 +134,9 @@ export default function Home() {
                 Delivering High-Quality Industrial Equipment and Services Across
                 Australia
               </p>
-              <div className="d-flex flex-sm-row flex-column gap-4 align-items-center gap-3">
+              <div className="home_btn d-flex flex-sm-row flex-column gap-4 align-items-center gap-3">
                 <Link to="/product" className="view_product">View Products</Link>
-                <Link to="/contact" className="contact_sale">Contact Sales</button>
+                <Link to="/contact" className="contact_sale">Contact Sales</Link>
               </div>
             </div>
           </div>

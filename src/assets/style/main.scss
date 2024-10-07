@@ -232,15 +232,16 @@ header {
     }
   }
 
-  button {
+  .home_btn a {
     width: 207px;
     height: 55px;
     border-radius: 20px;
-    border: none;
     font-size: 20px;
     line-height: 25px;
     font-weight: 400;
-    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .view_product {
@@ -252,6 +253,7 @@ header {
   .contact_sale {
     border: 1px solid $primary;
     color: $primary;
+    background-color: #f0f0f0;
   }
 }
 
@@ -352,7 +354,7 @@ header {
 }
 
 .service_main {
-  background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(211,211,211,1) 57%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(211, 211, 211, 1) 57%);
   height: 100%;
   h3 {
     font-size: 48px;

@@ -220,15 +220,16 @@ header .menu_close {
     width: 100%;
   }
 }
-.main_banner button {
+.main_banner .home_btn a {
   width: 207px;
   height: 55px;
   border-radius: 20px;
-  border: none;
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
-  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main_banner .view_product {
   background-color: rgb(42, 41, 121);
@@ -238,6 +239,7 @@ header .menu_close {
 .main_banner .contact_sale {
   border: 1px solid rgb(67, 111, 199);
   color: rgb(67, 111, 199);
+  background-color: #f0f0f0;
 }
 
 .main_tabs {
