@@ -88,21 +88,22 @@ header {
     }
     .top_drop {
       position: absolute;
-      top: 0px;
-      left: 45%;
+      top: -12px;
+      left: 50%;
       transform: translateX(-50%);
       @include lg {
         display: none;
       }
       svg {
         width: 16px;
-        position: absolute;
-        top: -12px;
         fill: #2a2776;
       }
     }
     li {
       text-wrap: nowrap;
+      @include sm {
+        text-wrap: wrap;
+      }
       &:last-child {
         a {
           border: none;
@@ -2105,7 +2106,7 @@ footer {
 
 .service_info {
   // background: linear-gradient(127deg, rgba(255, 255, 255, 1) 0%, rgba(32, 90, 239, 1) 100%);
-  background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(211,211,211,1) 57%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(211, 211, 211, 1) 57%);
   height: 100%;
   // .text_h3 {
   //   position: relative;

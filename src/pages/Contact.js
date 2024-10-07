@@ -54,14 +54,14 @@ export default function Contact() {
                   </Link>
                 </div>
                 <div className="col-md-3">
-                  <Link to="/" className="d-flex align-items-center gap-3 contact_call">
+                  <Link target="_blank" to="https://maps.app.goo.gl/Qyj1KL9LszoxF7py7" className="d-flex align-items-center gap-3 contact_call">
                     <div className="contact_icon">
                       <svg xmlns="http://www.w3.org/2000/svg" height={'30'} viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" /></svg>
                     </div>
                     <div className="d-flex flex-column gap-1">
                       <h4>Location</h4>
                       <p>8 Sparks Road
-                        Henderson WA 6166
+                        Henderson Western Australia, Perth 6166
                       </p>
                     </div>
                   </Link>
