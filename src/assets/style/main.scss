@@ -1513,8 +1513,9 @@ footer {
 }
 
 .service_banner {
-  background: linear-gradient(127deg, rgba(255, 255, 255, 1) 0%, rgba(32, 90, 239, 1) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(211, 211, 211, 1) 57%);
   height: 100%;
+  //  background: linear-gradient(127deg, rgba(255, 255, 255, 1) 0%, rgba(32, 90, 239, 1) 100%);
   .service_text {
     height: 100%;
     h1 {
@@ -1550,7 +1551,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 25px;
-
+    // background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(211, 211, 211, 1) 57%);
     border-radius: 15px;
     box-shadow:
       inset 0 0px 6px 2px rgba(15, 85, 233, 0.6509803922),
