@@ -35,10 +35,10 @@ const Globe = () => {
       if (globeMaterial) {
         globe.hexPolygonsData(countries.features);
         globe.hexPolygonResolution(3);
-        globe.hexPolygonColor(() => '#fff');
+        globe.hexPolygonColor(() => 0xFFFFFF);
         globe.hexPolygonMargin(0.8);
         globe.showAtmosphere(true);
-        globe.atmosphereColor("#3a228a");
+        globe.atmosphereColor(0x3a228a);
         globeMaterial.color.set(0x535ef3);
         globeMaterial.emissive.set(0x220038);
         globeMaterial.metalness = 1;
@@ -78,11 +78,11 @@ const Globe = () => {
       }
     });
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-    directionalLight.position.set(800, -200, 400).normalize();
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
+    directionalLight.position.set(1000, -200, 400).normalize();
     scene.add(directionalLight);
 
-    const directionalLight2 = new THREE.DirectionalLight(0x7982f6, 1);
+    const directionalLight2 = new THREE.DirectionalLight(0x7982f6, 0.8);
     directionalLight2.position.set(200, -500, 200);
     scene.add(directionalLight2);
 
@@ -94,7 +94,7 @@ const Globe = () => {
     controls.enableZoom = false;
 
     // const logCameraPosition = () => {
-    //   console.log('Camera Position:', camera.position);
+    //   console.log('Camera Position:',directionalLight3.position);
     // };
 
     // controls.addEventListener('change', logCameraPosition);
@@ -108,7 +108,7 @@ const Globe = () => {
       } else if (width <= 1024) {
         position = { x: 110, y: -80, z: -110 };
       } else {
-        position = { x: 109.98, y: -79.98, z: -109.98 };
+        position = { x: 110, y: -80, z: -110 };
       }
       camera.position.set(position.x, position.y, position.z);
       camera.lookAt(globe.position);

@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Productive from "../components/Productive";
 import { Link } from "react-router-dom";
+import ViewMore from "../components/ViewMore";
 
 export default function Product() {
 
@@ -39,6 +40,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Accumulators </h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -54,6 +56,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Filtration</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -66,6 +69,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Cartridges & Manifolds</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -78,6 +82,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Condition Monitoring</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -90,6 +95,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Coolers</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -102,6 +108,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Cylinders</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -114,6 +121,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Directional Control Valve</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -126,6 +134,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Flow Meters</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -138,6 +147,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Gauges</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -150,6 +160,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Globe Air Motors</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -162,6 +173,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>High Force Equipment</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -174,6 +186,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Hose & Fittings</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -186,6 +199,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Instrumentation</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -198,6 +212,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Lubrication Systems</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -210,6 +225,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Manifolds</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -222,6 +238,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Hydraulic Motors</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -234,6 +251,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Pneumatics</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -246,6 +264,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Power Units</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -258,6 +277,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Pumps</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -270,6 +290,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Steeing</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -282,6 +303,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Electronic Controls</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -294,6 +316,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>WEG Electric Motors</h5>
+                <ViewMore/>
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -306,6 +329,7 @@ export default function Product() {
                   />
                 </div>
                 <h5>Press</h5>
+                <ViewMore/>
               </Link>
             </div>
           </div>

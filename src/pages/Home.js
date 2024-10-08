@@ -52,35 +52,42 @@ export default function Home() {
       },
     ],
   };
-  // const logo = {
-  //   slidesToShow: 5,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 8000,
-  //   pauseOnHover: false,
-  //   autoplaySpeed: 500,
-  //   autoplay: true,
-  //   cssEase: "linear",
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // };
 
+  const settings1 = {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    infinite: true,
+    nextArrow: <FontAwesomeIcon icon={faChevronRight} />,
+    prevArrow: <FontAwesomeIcon icon={faChevronLeft} />,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 786,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   const [letters, setLetters] = useState([]);
 
   useEffect(() => {
@@ -121,7 +128,7 @@ export default function Home() {
                   <span className="home_animation"
                     key={index}
                     style={{
-                      marginRight: letter === " " ? "8px" : "0px", 
+                      marginRight: letter === " " ? "8px" : "0px",
                       opacity: 0,
                       animation: `fadeIn 0.1s ${index * 0.05}s forwards`,
                     }}
@@ -214,56 +221,285 @@ export default function Home() {
               aria-labelledby="home-tab"
               tabindex="0"
             >
-              <ul className="d-flex flex-md-row flex-column align-items-center justify-content-between gap-4">
-                <li>
-                  <Link className="w-100" to="/product">
-                    <p>Heavy Machinery</p>
+              <Slider className="home_slider_main px-3 d-flex flex-md-row flex-column align-items-center justify-content-between gap-4" {...settings1}>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/accumulators">
+                    <p>Accumulators</p>
                     <div className="d-block tab_img">
                       <img
                         className="w-100 h-100"
-                        src={require("../assets/images/jcb.png")}
+                        src={require("../assets/images/product1.png")}
                         alt="img"
                       />
                     </div>
                   </Link>
-                </li>
-                <li>
-                  <Link className="w-100" to="/product">
-                    <p>Precision Tools</p>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/filtration">
+                    <p>Filtration</p>
                     <div className="d-block tab_img">
                       <img
                         className="w-100 h-100"
-                        src={require("../assets/images/spring.png")}
+                        src={require("../assets/images/Filtration.png")}
                         alt="img"
                       />
                     </div>
                   </Link>
-                </li>
-                <li>
-                  <Link className="w-100" to="/product">
-                    <p>Safety Equipment</p>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/cartridges-&-manifolds">
+                    <p>Cartridges & Manifolds</p>
                     <div className="d-block tab_img">
                       <img
                         className="w-100 h-100"
-                        src={require("../assets/images/sefty.png")}
+                        src={require("../assets/images/Cartridges.png")}
                         alt="img"
                       />
                     </div>
                   </Link>
-                </li>
-                <li>
-                  <Link className="w-100" to="/product">
-                    <p>Custom Solutions</p>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/condition-monitoring">
+                    <p>Condition Monitoring</p>
                     <div className="d-block tab_img">
                       <img
                         className="w-100 h-100"
-                        src={require("../assets/images/motor.png")}
+                        src={require("../assets/images/Condition.png")}
                         alt="img"
                       />
                     </div>
                   </Link>
-                </li>
-              </ul>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/coolers">
+                    <p>Coolers</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Coolers.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/cylinders">
+                    <p>Cylinders</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Cylinders.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/directional-control-valve">
+                    <p>Directional Control Valve</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Directional.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/flow-meters">
+                    <p>Flow Meters</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Flow.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/gauges">
+                    <p>Gauges</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Gauges.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/globe-air-motors">
+                    <p>Globe Air Motors</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Globe.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/high-force-equipment">
+                    <p>High Force Equipment</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/High.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/hose-&-fittings">
+                    <p>Hose & Fittings</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Hose.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/instrumentation">
+                    <p>Instrumentation</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Instrumentation.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/lubrication-systems">
+                    <p>Lubrication Systems</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Lubrication.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/manifolds">
+                    <p>Manifolds </p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Manifolds.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/hydraulic-motors">
+                    <p>Hydraulic Motors </p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Hydraulic.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/hydraulic-motors">
+                    <p>Pneumatics</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Pneumatics.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/power-units">
+                    <p>Power Units</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Power.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/pumps">
+                    <p>Pumps</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Pumps.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/steeing">
+                    <p>Steeing</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/Steeing.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/electronic-controls">
+                    <p>Electronic Controls</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/electronic_control.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/">
+                    <p>WEG Electric Motors</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/weg.jpg")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/product-info/press">
+                    <p>Press</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/press.jpg")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+              </Slider>
+              
             </div>
             <div
               class="tab-pane fade"
@@ -272,8 +508,8 @@ export default function Home() {
               aria-labelledby="profile-tab"
               tabindex="0"
             >
-              <ul className="d-flex flex-md-row flex-column align-items-center justify-content-between gap-4">
-                <li>
+              <Slider className="home_slider_main d-flex flex-md-row flex-column align-items-center justify-content-between gap-4" {...settings1}>
+                <div className="home_slider">
                   <Link className="w-100" to="/service-info/Power-Unit-Hydraulic-Cylinder-and-Manifold-Design-&-Supply">
                     <p>Power Unit, Hydraulic Cylinder and Manifold Design & Supply</p>
                     <div className="d-block tab_img">
@@ -284,8 +520,8 @@ export default function Home() {
                       />
                     </div>
                   </Link>
-                </li>
-                <li>
+                </div>
+                <div className="home_slider">
                   <Link className="w-100" to="/service-info/Hydraulic-Application-Engineering">
                     <p>Hydraulic Application Engineering</p>
                     <div className="d-block tab_img">
@@ -296,8 +532,8 @@ export default function Home() {
                       />
                     </div>
                   </Link>
-                </li>
-                <li>
+                </div>
+                <div className="home_slider">
                   <Link className="w-100" to="/service-info/Reconditioning-servicing-and-testing">
                     <p>Reconditioning, servicing, and testing</p>
                     <div className="d-block tab_img">
@@ -308,8 +544,45 @@ export default function Home() {
                       />
                     </div>
                   </Link>
-                </li>
-                <li>
+                </div>
+               
+                <div className="home_slider">
+                  <Link className="w-100" to="/service-info/Hydraulic-Training">
+                    <p>On-site fluid contamination analysis, hydraulic system maintenance, and scheduled hydraulic servicing</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/maintenance.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/service-info/On-site-installations">
+                    <p>On-site installations, commissioning, troubleshooting, and break-down repairs</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/trub.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/service-info/Standard-or-exotic-hose-assembly-supply">
+                    <p>Standard or exotic hose assembly supply, testing, inspections and certification</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/inspection.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
                   <Link className="w-100" to="/service-info/Hydraulic-Training">
                     <p>Hydraulic Training</p>
                     <div className="d-block tab_img">
@@ -320,8 +593,21 @@ export default function Home() {
                       />
                     </div>
                   </Link>
-                </li>
-              </ul>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/service-info/Fully-equipped-Hydraulic-Workshop-facilities">
+                    <p>Fully equipped Hydraulic Workshop facilities</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/workshop.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+              </Slider>
+            
             </div>
             <div
               class="tab-pane fade"
@@ -330,8 +616,8 @@ export default function Home() {
               aria-labelledby="contact-tab"
               tabindex="0"
             >
-              <ul className="d-flex flex-md-row flex-column align-items-center justify-content-between gap-4">
-                <li>
+              <Slider className="home_slider_main d-flex flex-md-row flex-column align-items-center justify-content-between gap-4" {...settings1}>
+                <div className="home_slider">
                   <Link className="w-100" to="/fleet-hire">
                     <p>Hydraulic Power Unit 2</p>
                     <div className="d-block tab_img">
@@ -342,8 +628,8 @@ export default function Home() {
                       />
                     </div>
                   </Link>
-                </li>
-                <li>
+                </div>
+                <div className="home_slider">
                   <Link className="w-100" to="/fleet-hire">
                     <p>Hydraulic Power Unit 3</p>
                     <div className="d-block tab_img">
@@ -354,8 +640,8 @@ export default function Home() {
                       />
                     </div>
                   </Link>
-                </li>
-                <li>
+                </div>
+                <div className="home_slider">
                   <Link className="w-100" to="/fleet-hire">
                     <p>Hydraulic Power Unit 4</p>
                     <div className="d-block tab_img">
@@ -366,8 +652,8 @@ export default function Home() {
                       />
                     </div>
                   </Link>
-                </li>
-                <li>
+                </div>
+                <div className="home_slider">
                   <Link className="w-100" to="/fleet-hire">
                     <p>Hydraulic Power Unit 5</p>
                     <div className="d-block tab_img">
@@ -378,8 +664,45 @@ export default function Home() {
                       />
                     </div>
                   </Link>
-                </li>
-              </ul>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/fleet-hire">
+                    <p>HSS OFU 3 Fluid Transfer / Flushing Unit</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/fleet5.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/fleet-hire">
+                    <p>HSS Accumulator Intensifier Unit</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/fleet6.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="home_slider">
+                  <Link className="w-100" to="/fleet-hire">
+                    <p>HSS OFT20 Offline Filtration Trolley</p>
+                    <div className="d-block tab_img">
+                      <img
+                        className="w-100 h-100"
+                        src={require("../assets/images/fleet7.png")}
+                        alt="img"
+                      />
+                    </div>
+                  </Link>
+                </div>
+              </Slider>
+           
             </div>
           </div>
         </div>

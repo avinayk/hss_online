@@ -37,7 +37,7 @@ export default function Contact() {
                     </div>
                     <div className="d-flex flex-column gap-1">
                       <h4>Call Us</h4>
-                      <p>+61 8 9437 5388</p>
+                      <p>+61 894 37 53 88</p>
                     </div>
                   </Link>
                 </div>

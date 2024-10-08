@@ -1,7 +1,7 @@
-import React, { useState, useEffect , useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import ViewMore from "../components/ViewMore";
 import Productive from "../components/Productive";
 import fleetBanner from "../assets/images/fleet-hire.png";
 
@@ -77,7 +77,7 @@ export default function FleetHire() {
         `;
             setLiveText(text);
             setLiveHead(heading);
-        } 
+        }
         else if (id === "2") {
             const img = require("../assets/images/fleet2.png");
             setImage(img);
@@ -122,7 +122,7 @@ export default function FleetHire() {
         `;
             setLiveText(text);
             setLiveHead(heading);
-        } 
+        }
         else if (id === "3") {
             const img = require("../assets/images/fleet3.png");
             setImage(img);
@@ -337,7 +337,7 @@ export default function FleetHire() {
                             <h2> Welcome to the Hydraulic Solutions and Sales Hire Fleet Division.</h2>
 
                         </div>
-                        <div  className="col-10 mx-auto">
+                        <div className="col-10 mx-auto">
                             <div className="d-flex flex-column gap-2">
                                 <p>
                                     If you don’t find exactly what you need from the options below, we are happy to provide a custom-built HPU hire solution tailored to your needs. </p>
@@ -347,7 +347,7 @@ export default function FleetHire() {
                         </div>
                         <div className="col-12">
                             <div className="d-flex flex-wrap fleet_product align-items-center justify-content-between gap-5">
-                                <div  className={isActive ? "active fleet_main_p" : "fleet_main_p"}>
+                                <div className={isActive ? "active fleet_main_p" : "fleet_main_p"}>
                                     <div className="d-flex flex-column gap-3 fleet_1 fleet_main_p flex-shrink-0">
 
                                         <h4 dangerouslySetInnerHTML={{ __html: liveHead }}></h4>
@@ -376,6 +376,7 @@ export default function FleetHire() {
                                             alt="img"
                                         />
                                     </div>
+                                    <ViewMore />
                                 </div>
                                 <div onClick={() => handleClick(2)} className="d-flex flex-column gap-3 fleet_1">
                                     <h4>Hydraulic Power Unit 3</h4>
@@ -386,6 +387,7 @@ export default function FleetHire() {
                                             alt="img"
                                         />
                                     </div>
+                                    <ViewMore />
                                 </div>
                                 <div onClick={() => handleClick(3)} className="d-flex flex-column gap-3 fleet_1">
                                     <h4>Hydraulic Power Unit 4</h4>
@@ -396,6 +398,7 @@ export default function FleetHire() {
                                             alt="img"
                                         />
                                     </div>
+                                    <ViewMore />
                                 </div>
                                 <div onClick={() => handleClick(4)} className="d-flex flex-column gap-3 fleet_1">
                                     <h4>Hydraulic Power Unit 5</h4>
@@ -406,6 +409,7 @@ export default function FleetHire() {
                                             alt="img"
                                         />
                                     </div>
+                                    <ViewMore />
                                 </div>
                                 <div onClick={() => handleClick(5)} className="d-flex flex-column gap-3 fleet_1">
                                     <h4>HSS OFU 3 Fluid Transfer / Flushing Unit</h4>
@@ -416,6 +420,7 @@ export default function FleetHire() {
                                             alt="img"
                                         />
                                     </div>
+                                    <ViewMore />
                                 </div>
                                 <div onClick={() => handleClick(6)} className="d-flex flex-column gap-3 fleet_1">
                                     <h4>HSS Accumulator Intensifier Unit</h4>
@@ -426,6 +431,7 @@ export default function FleetHire() {
                                             alt="img"
                                         />
                                     </div>
+                                    <ViewMore />
                                 </div>
                                 <div onClick={() => handleClick(7)} className="d-flex flex-column gap-3 fleet_1">
                                     <h4>HSS OFT20 Offline Filtration Trolley</h4>
@@ -436,6 +442,7 @@ export default function FleetHire() {
                                             alt="img"
                                         />
                                     </div>
+                                    <ViewMore />
                                 </div>
                             </div>
                         </div>

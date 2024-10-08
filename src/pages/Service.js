@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Productive from "../components/Productive";
+import ViewMore from "../components/ViewMore";
 
 export default function Service() {
   return (
@@ -33,7 +34,7 @@ export default function Service() {
             </div>
             <div className="col-12">
               <div className="row align-items-center justify-content-start gy-4">
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <Link className="text_h3" to="/service-info/Power-Unit-Hydraulic-Cylinder-and-Manifold-Design-&-Supply">
                     <div className="service_icon">
                       <img
@@ -45,9 +46,10 @@ export default function Service() {
                     <h3>
                       Power Unit, Hydraulic Cylinder and Manifold Design & Supply
                     </h3>
+                    <ViewMore />
                   </Link>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <Link className="text_h3" to="/service-info/Hydraulic-Application-Engineering">
                     <div className="service_icon">
                       <img
@@ -59,9 +61,10 @@ export default function Service() {
                     <h3>
                       Hydraulic Application Engineering
                     </h3>
+                    <ViewMore />
                   </Link>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <Link className="text_h3" to="/service-info/Reconditioning-servicing-and-testing">
                     <div className="service_icon">
                       <img
@@ -73,9 +76,10 @@ export default function Service() {
                     <h3>
                       Reconditioning, servicing, and testing
                     </h3>
+                    <ViewMore />
                   </Link>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <Link className="text_h3" to="/service-info/On-site-fluid-contamination-analysis">
                     <div className="service_icon">
                       <img
@@ -87,9 +91,10 @@ export default function Service() {
                     <h3>
                       On-site fluid contamination analysis, hydraulic system maintenance, and scheduled hydraulic servicing
                     </h3>
+                    <ViewMore />
                   </Link>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <Link className="text_h3" to="/service-info/On-site-installations">
                     <div className="service_icon">
                       <img
@@ -99,11 +104,12 @@ export default function Service() {
                       />
                     </div>
                     <h3>
-                    On-site installations, commissioning, troubleshooting, and break-down repairs
+                      On-site installations, commissioning, troubleshooting, and break-down repairs
                     </h3>
+                    <ViewMore />
                   </Link>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <Link className="text_h3" to="/service-info/Standard-or-exotic-hose-assembly-supply">
                     <div className="service_icon">
                       <img
@@ -113,11 +119,12 @@ export default function Service() {
                       />
                     </div>
                     <h3>
-                    Standard or exotic hose assembly supply, testing, inspections and certification
+                      Standard or exotic hose assembly supply, testing, inspections and certification
                     </h3>
+                    <ViewMore />
                   </Link>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <Link className="text_h3" to="/service-info/Hydraulic-Training">
                     <div className="service_icon">
                       <img
@@ -127,11 +134,12 @@ export default function Service() {
                       />
                     </div>
                     <h3>
-                    Hydraulic Training
+                      Hydraulic Training
                     </h3>
+                    <ViewMore />
                   </Link>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <Link className="text_h3" to="/service-info/Fully-equipped-Hydraulic-Workshop-facilities">
                     <div className="service_icon">
                       <img
@@ -141,8 +149,9 @@ export default function Service() {
                       />
                     </div>
                     <h3>
-                    Fully equipped Hydraulic Workshop facilities
+                      Fully equipped Hydraulic Workshop facilities
                     </h3>
+                    <ViewMore />
                   </Link>
                 </div>
               </div>

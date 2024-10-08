@@ -205,7 +205,7 @@ export default function Header() {
                 </li>
               </ul>
               <div className="d-flex align-items-center gap-3">
-                <Link className="contact_call" to="tel:61 1234567890">+61 1234567890</Link>
+                <Link className="contact_call" to="tel:+61894375388">+61 894 37 53 88</Link>
                 <Link to="/contact" className="contact_us">Contact Us</Link>
               </div>
             </div>

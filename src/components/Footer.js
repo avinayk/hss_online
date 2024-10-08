@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="col-md-6">
               <ul>
                 <li>
-                  <Link to="/">
+                  <Link to="https://maps.app.goo.gl/Qyj1KL9LszoxF7py7">
                     <div className="d-flex align-items-center gap-3">
                       <div className="d-block icon_fit">
                         <img
@@ -38,7 +38,7 @@ export default function Footer() {
                           alt="img"
                         />
                       </div>
-                      <p>Address : 8 Sparks Rd Henderson Perth WA 6163</p>
+                      <p>Address : 8 Sparks Road Henderson Western Australia, Perth 6166</p>
                     </div>
                   </Link>
                 </li>
@@ -52,12 +52,12 @@ export default function Footer() {
                           alt="img"
                         />
                       </div>
-                      <p>Phone no : +61 8 9437 5388</p>
+                      <p>Phone no : +61 894 37 53 88</p>
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link to="mailTo:hssptyltd.com.au">
+                  <Link to="mailTo:sales@hssptyltd.com.au">
                     <div className="d-flex align-items-center gap-3">
                       <div className="d-block icon_fit">
                         <img
@@ -66,7 +66,7 @@ export default function Footer() {
                           alt="img"
                         />
                       </div>
-                      <p>Email : hssptyltd.com.au</p>
+                      <p>Email : sales@hssptyltd.com.au</p>
                     </div>
                   </Link>
                 </li>

@@ -5,6 +5,7 @@ import ContactBtn from "../components/ContactBtn";
 import Productive from "../components/Productive";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import ViewMore from "../components/ViewMore";
 
 export default function ProductInfo() {
   const { id } = useParams();
@@ -1660,6 +1661,7 @@ For increased ease and accuracy with straightening jobs, optional heavy-duty str
                   />
                 </div>
                 <h5>Instrumentation</h5>
+                <ViewMore />
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -1672,6 +1674,7 @@ For increased ease and accuracy with straightening jobs, optional heavy-duty str
                   />
                 </div>
                 <h5>Lubrication Systems</h5>
+                <ViewMore />
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -1684,6 +1687,7 @@ For increased ease and accuracy with straightening jobs, optional heavy-duty str
                   />
                 </div>
                 <h5>Manifolds</h5>
+                <ViewMore />
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -1696,6 +1700,7 @@ For increased ease and accuracy with straightening jobs, optional heavy-duty str
                   />
                 </div>
                 <h5>Hydraulic Motors</h5>
+                <ViewMore />
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -1708,6 +1713,7 @@ For increased ease and accuracy with straightening jobs, optional heavy-duty str
                   />
                 </div>
                 <h5>Pneumatics</h5>
+                <ViewMore />
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -1720,6 +1726,7 @@ For increased ease and accuracy with straightening jobs, optional heavy-duty str
                   />
                 </div>
                 <h5>Power Units</h5>
+                <ViewMore />
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -1732,6 +1739,7 @@ For increased ease and accuracy with straightening jobs, optional heavy-duty str
                   />
                 </div>
                 <h5>Pumps</h5>
+                <ViewMore />
               </Link>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3">
@@ -1744,6 +1752,7 @@ For increased ease and accuracy with straightening jobs, optional heavy-duty str
                   />
                 </div>
                 <h5>Steeing</h5>
+                <ViewMore />
               </Link>
             </div>
           </div>
