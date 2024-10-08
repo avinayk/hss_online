@@ -1254,7 +1254,112 @@ export default function Home() {
                     </div>
                   </Tab>
                   <Tab eventKey="profile" title="News">
-                    <p>Content for News tab.</p>
+                  <Slider className="blog_slider " {...settings}>
+                        <div className="blog_box gap-3">
+                          <div className="d-block blog_box_img">
+                            <img
+                              className="w-100 h-100"
+                              src={require("../assets/images/s1.jfif")}
+                              alt="img"
+                            />
+                          </div>
+                          <div className="d-flex flex-column gap-5 p-3">
+                            <div className="d-flex flex-column gap-1">
+                              <h5>High-Quality Hydraulic Products</h5>
+                              <p>
+                                rom pumps to valves and hoses, we offer a
+                                comprehensive selection of hydraulic equipment
+                                to meet all your needs.
+                              </p>
+                            </div>
+                            <div className="d-flex align-items-center justify-content-between gap-1">
+                              <h6>Aug 24</h6>
+                              <Link to="/">
+                                Read More{" "}
+                                <FontAwesomeIcon icon={faArrowRightLong} />
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="blog_box gap-3">
+                          <div className="d-block blog_box_img">
+                            <img
+                              className="w-100 h-100"
+                              src={require("../assets/images/s2.jfif")}
+                              alt="img"
+                            />
+                          </div>
+                          <div className="d-flex flex-column gap-5 p-3">
+                            <div className="d-flex flex-column gap-1">
+                              <h5>High-Quality Hydraulic Products</h5>
+                              <p>
+                                rom pumps to valves and hoses, we offer a
+                                comprehensive selection of hydraulic equipment
+                                to meet all your needs.
+                              </p>
+                            </div>
+                            <div className="d-flex align-items-center justify-content-between gap-1">
+                              <h6>Aug 24</h6>
+                              <Link to="/">
+                                Read More{" "}
+                                <FontAwesomeIcon icon={faArrowRightLong} />
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="blog_box gap-3">
+                          <div className="d-block blog_box_img">
+                            <img
+                              className="w-100 h-100"
+                              src={require("../assets/images/s3.jfif")}
+                              alt="img"
+                            />
+                          </div>
+                          <div className="d-flex flex-column gap-5 p-3">
+                            <div className="d-flex flex-column gap-1">
+                              <h5>High-Quality Hydraulic Products</h5>
+                              <p>
+                                rom pumps to valves and hoses, we offer a
+                                comprehensive selection of hydraulic equipment
+                                to meet all your needs.
+                              </p>
+                            </div>
+                            <div className="d-flex align-items-center justify-content-between gap-1">
+                              <h6>Aug 24</h6>
+                              <Link to="/">
+                                Read More{" "}
+                                <FontAwesomeIcon icon={faArrowRightLong} />
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="blog_box gap-3">
+                          <div className="d-block blog_box_img">
+                            <img
+                              className="w-100 h-100"
+                              src={require("../assets/images/s4.jfif")}
+                              alt="img"
+                            />
+                          </div>
+                          <div className="d-flex flex-column gap-5 p-3">
+                            <div className="d-flex flex-column gap-1">
+                              <h5>High-Quality Hydraulic Products</h5>
+                              <p>
+                                rom pumps to valves and hoses, we offer a
+                                comprehensive selection of hydraulic equipment
+                                to meet all your needs.
+                              </p>
+                            </div>
+                            <div className="d-flex align-items-center justify-content-between gap-1">
+                              <h6>Aug 24</h6>
+                              <Link to="/">
+                                Read More{" "}
+                                <FontAwesomeIcon icon={faArrowRightLong} />
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </Slider>
                   </Tab>
                 </Tabs>
               
