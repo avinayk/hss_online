@@ -301,12 +301,13 @@ header {
         .slick-track {
           display: flex !important;
           gap: 14px;
+          padding-right: 45px;
         }
         .slick-prev {
           left: -8px;
         }
         .slick-next {
-          right: -16px;
+          right: -8px;
         }
         .slick-prev,
         .slick-next {
@@ -314,7 +315,7 @@ header {
         }
       }
       .home_slider {
-        height: 113px;
+        height: 140px;
         width: 25%;
         position: relative;
         border-radius: 10px;
@@ -344,7 +345,7 @@ header {
           z-index: 98;
           font-size: 21px;
           line-height: 22px;
-          height: 74px;
+          height: 106px;
           font-weight: 500;
           width: 100%;
           color: #fff;

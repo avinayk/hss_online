@@ -284,19 +284,20 @@ header .menu_close {
 .main_tabs .tab-content .tab-pane .home_slider_main .slick-track {
   display: flex !important;
   gap: 14px;
+  padding-right: 45px;
 }
 .main_tabs .tab-content .tab-pane .home_slider_main .slick-prev {
   left: -8px;
 }
 .main_tabs .tab-content .tab-pane .home_slider_main .slick-next {
-  right: -16px;
+  right: -8px;
 }
 .main_tabs .tab-content .tab-pane .home_slider_main .slick-prev,
 .main_tabs .tab-content .tab-pane .home_slider_main .slick-next {
   color: #000;
 }
 .main_tabs .tab-content .tab-pane .home_slider {
-  height: 113px;
+  height: 140px;
   width: 25%;
   position: relative;
   border-radius: 10px;
@@ -326,7 +327,7 @@ header .menu_close {
   z-index: 98;
   font-size: 21px;
   line-height: 22px;
-  height: 74px;
+  height: 106px;
   font-weight: 500;
   width: 100%;
   color: #fff;

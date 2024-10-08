@@ -62,28 +62,18 @@ export default function Home() {
     nextArrow: <FontAwesomeIcon icon={faChevronRight} />,
     prevArrow: <FontAwesomeIcon icon={faChevronLeft} />,
     speed: 1000,
-    autoplaySpeed: 2000,
     autoplay: false,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 786,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
@@ -221,7 +211,7 @@ export default function Home() {
               aria-labelledby="home-tab"
               tabindex="0"
             >
-              <Slider className="home_slider_main px-3 d-flex flex-md-row flex-column align-items-center justify-content-between gap-4" {...settings1}>
+              <Slider className="home_slider_main px-3 " {...settings1}>
                 <div className="home_slider">
                   <Link className="w-100" to="/product-info/accumulators">
                     <p>Accumulators</p>
@@ -499,7 +489,7 @@ export default function Home() {
                   </Link>
                 </div>
               </Slider>
-              
+
             </div>
             <div
               class="tab-pane fade"
@@ -508,7 +498,7 @@ export default function Home() {
               aria-labelledby="profile-tab"
               tabindex="0"
             >
-              <Slider className="home_slider_main d-flex flex-md-row flex-column align-items-center justify-content-between gap-4" {...settings1}>
+              <Slider className="home_slider_main px-3" {...settings1}>
                 <div className="home_slider">
                   <Link className="w-100" to="/service-info/Power-Unit-Hydraulic-Cylinder-and-Manifold-Design-&-Supply">
                     <p>Power Unit, Hydraulic Cylinder and Manifold Design & Supply</p>
@@ -545,7 +535,7 @@ export default function Home() {
                     </div>
                   </Link>
                 </div>
-               
+
                 <div className="home_slider">
                   <Link className="w-100" to="/service-info/Hydraulic-Training">
                     <p>On-site fluid contamination analysis, hydraulic system maintenance, and scheduled hydraulic servicing</p>
@@ -607,7 +597,7 @@ export default function Home() {
                   </Link>
                 </div>
               </Slider>
-            
+
             </div>
             <div
               class="tab-pane fade"
@@ -616,7 +606,7 @@ export default function Home() {
               aria-labelledby="contact-tab"
               tabindex="0"
             >
-              <Slider className="home_slider_main d-flex flex-md-row flex-column align-items-center justify-content-between gap-4" {...settings1}>
+              <Slider className="home_slider_main px-3" {...settings1}>
                 <div className="home_slider">
                   <Link className="w-100" to="/fleet-info/hydraulic-power-unit-2">
                     <p>Hydraulic Power Unit 2</p>
@@ -702,7 +692,7 @@ export default function Home() {
                   </Link>
                 </div>
               </Slider>
-           
+
             </div>
           </div>
         </div>
@@ -1267,6 +1257,7 @@ export default function Home() {
                     <p>Content for News tab.</p>
                   </Tab>
                 </Tabs>
+              
               </div>
             </div>
           </div>
