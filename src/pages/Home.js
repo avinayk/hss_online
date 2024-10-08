@@ -618,7 +618,7 @@ export default function Home() {
             >
               <Slider className="home_slider_main d-flex flex-md-row flex-column align-items-center justify-content-between gap-4" {...settings1}>
                 <div className="home_slider">
-                  <Link className="w-100" to="/fleet-hire">
+                  <Link className="w-100" to="/fleet-info/hydraulic-power-unit-2">
                     <p>Hydraulic Power Unit 2</p>
                     <div className="d-block tab_img">
                       <img
@@ -630,7 +630,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="home_slider">
-                  <Link className="w-100" to="/fleet-hire">
+                  <Link className="w-100" to="/fleet-info/hydraulic-power-unit-3">
                     <p>Hydraulic Power Unit 3</p>
                     <div className="d-block tab_img">
                       <img
@@ -642,7 +642,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="home_slider">
-                  <Link className="w-100" to="/fleet-hire">
+                  <Link className="w-100" to="/fleet-info/hydraulic-power-unit-4">
                     <p>Hydraulic Power Unit 4</p>
                     <div className="d-block tab_img">
                       <img
@@ -654,7 +654,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="home_slider">
-                  <Link className="w-100" to="/fleet-hire">
+                  <Link className="w-100" to="/fleet-info/hydraulic-power-unit-5">
                     <p>Hydraulic Power Unit 5</p>
                     <div className="d-block tab_img">
                       <img
@@ -666,7 +666,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="home_slider">
-                  <Link className="w-100" to="/fleet-hire">
+                  <Link className="w-100" to="/fleet-info/flushing-unit">
                     <p>HSS OFU 3 Fluid Transfer / Flushing Unit</p>
                     <div className="d-block tab_img">
                       <img
@@ -678,7 +678,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="home_slider">
-                  <Link className="w-100" to="/fleet-hire">
+                  <Link className="w-100" to="/fleet-info/hss-accumulator">
                     <p>HSS Accumulator Intensifier Unit</p>
                     <div className="d-block tab_img">
                       <img
@@ -690,7 +690,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="home_slider">
-                  <Link className="w-100" to="/fleet-hire">
+                  <Link className="w-100" to="/fleet-info/hss-oft20-offline">
                     <p>HSS OFT20 Offline Filtration Trolley</p>
                     <div className="d-block tab_img">
                       <img
