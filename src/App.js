@@ -14,6 +14,7 @@ import ServiceInfo from "./pages/ServiceInfo";
 import FleetHire from "./pages/FleetHire";
 import ProductBrand from "./pages/ProductBrand";
 import CheckStock from "./pages/CheckStock";
+import FleetInfo from "./pages/FleetInfo";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/fleet-hire" element={<FleetHire />} />
         <Route path="/product-brand" element={<ProductBrand />} />
         <Route path="/check-out-what-we-stock" element={<CheckStock />} />
+        <Route path="/fleet-info/:id" element={<FleetInfo />} />
       </Routes>
     </Router>
   );
