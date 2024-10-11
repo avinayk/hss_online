@@ -108,9 +108,9 @@ export default function Home() {
           <div className="d-flex flex-column justify-content-center py-5 position-relative gap-5 align-items-center">
             <div className="d-flex flex-column gap-2 justify-content-center align-items-center">
               <h1>
-                Hydraulic <br /> solutions <br /> and sales
+                hydraulic <br /> solutions <br /> and sales
               </h1>
-              <h2>Leaders in Hydraulic Excellence</h2>
+              <h2>leaders in hydraulic excellence</h2>
             </div>
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-wrap">
