@@ -159,6 +159,115 @@ export default function Service() {
           </div>
         </div>
       </section>
+
+      <section className='d-block simple_process py-5'>
+        <div className='container-xl'>
+          <div className='row gy-5'>
+            <div className='col-12'>
+              <div className='d-flex flex-column gap-3 simple_process_head'>
+                <h5>
+                  Our Simple Process to Get You the Best Hydraulic Solutions
+                </h5>
+                <p>
+                  We’ve streamlined our process to make it easy for you to get
+                  the hydraulic equipment and support you need, without any
+                  hassle. Here’s how it works
+                </p>
+              </div>
+            </div>
+            <div className='col-12'>
+              <ul className='d-flex flex-wrap align-items-start gap-5'>
+                <li className='d-flex align-items-start gap-3'>
+                  <div className='d-block icon_fit'>
+                    <img
+                      className='w-100 h-100'
+                      src={require('../assets/images/p4.png')}
+                      alt='logo'
+                    />
+                  </div>
+                  <div className='d-flex flex-column gap-2'>
+                    <h6>Consultation & Needs Assessment</h6>
+                    <p>
+                      Reach out to us, and our expert team will discuss your
+                      specific requirements, understanding your project and
+                      equipment needs.
+                    </p>
+                  </div>
+                </li>
+                <li className='d-flex align-items-start gap-3'>
+                  <div className='d-block icon_fit'>
+                    <img
+                      className='w-100 h-100'
+                      src={require('../assets/images/p3.png')}
+                      alt='logo'
+                    />
+                  </div>
+                  <div className='d-flex flex-column gap-2'>
+                    <h6>Product Selection & Customization</h6>
+                    <p>
+                      Based on your needs, we recommend the best products from
+                      our extensive range or customise equipment to meet your
+                      exact specifications.
+                    </p>
+                  </div>
+                </li>
+                <li className='d-flex align-items-start gap-3'>
+                  <div className='d-block icon_fit'>
+                    <img
+                      className='w-100 h-100'
+                      src={require('../assets/images/p5.png')}
+                      alt='logo'
+                    />
+                  </div>
+                  <div className='d-flex flex-column gap-2'>
+                    <h6>Quotation & Approva</h6>
+                    <p>
+                      We provide a detailed, transparent quote for your review.
+                      Once you approve, we move forward with your order.
+                    </p>
+                  </div>
+                </li>
+                <li className='d-flex align-items-start gap-3'>
+                  <div className='d-block icon_fit'>
+                    <img
+                      className='w-100 h-100'
+                      src={require('../assets/images/p1.png')}
+                      alt='logo'
+                    />
+                  </div>
+                  <div className='d-flex flex-column gap-2'>
+                    <h6>Ongoing Support & Maintenance</h6>
+                    <p>
+                      Your order is processed promptly, and we arrange for fast,
+                      reliable delivery directly to your site.
+                    </p>
+                  </div>
+                </li>
+                <li className='d-flex align-items-start gap-3'>
+                  <div className='d-block icon_fit'>
+                    <img
+                      className='w-100 h-100'
+                      src={require('../assets/images/p2.png')}
+                      alt='logo'
+                    />
+                  </div>
+                  <div className='d-flex flex-column gap-2'>
+                    <h6>Order Fulfillment & Delivery</h6>
+                    <p>
+                      After delivery, we offer continued support, including
+                      maintenance services and expert advice to ensure your
+                      equipment runs smoothly.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div className='d-flex justify-content-center pt-5 align-items-center'>
+                <button className='start_btn'>Get Started Today</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* <section className="d-block service_banner py-5">
         <div className="container-xxl h-100">
           <div className="row h-100 position-relative">

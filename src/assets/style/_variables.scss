@@ -5,6 +5,21 @@ $trans: 0.3s all ease-in-out;
 $white: #fff;
 $black: #000;
 $contact : "Nothing You Could Do", cursive;
+$hfont : 'Microgramma';
+
+@font-face {
+  font-family: 'Microgramma';
+  src: url('../fonts/MicrogrammaD-BoldExte.eot');
+  src: url('../fonts/MicrogrammaD-BoldExte.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/MicrogrammaD-BoldExte.woff2') format('woff2'),
+      url('../fonts/MicrogrammaD-BoldExte.woff') format('woff'),
+      url('../fonts/MicrogrammaD-BoldExte.ttf') format('truetype'),
+      url('../fonts/MicrogrammaD-BoldExte.svg#MicrogrammaD-BoldExte') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 //! media queries

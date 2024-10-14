@@ -93,27 +93,28 @@ const Globe = () => {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableZoom = false;
 
-    // const logCameraPosition = () => {
-    //   console.log('Camera Position:',directionalLight3.position);
+    ///const logCameraPosition = () => {
+    //  console.log('Camera Position:', camera.position);
     // };
-
+    
     // controls.addEventListener('change', logCameraPosition);
 
     const updateCameraPosition = () => {
       const width = window.innerWidth;
       let position;
-
+     
       if (width <= 621) {
-        position = { x: 180, y: -150, z: -180 };
+        position = { x: 146.61, y: -122.17, z: -146.61 };
       } else if (width <= 1024) {
         position = { x: 110, y: -80, z: -110 };
       } else {
-        position = { x: 110, y: -80, z: -110 };
+        position = { x: 104.48, y: -75.98, z: -104.48 };
       }
       camera.position.set(position.x, position.y, position.z);
       camera.lookAt(globe.position);
       console.log(camera.position)
     };
+    
 
     updateCameraPosition();
 
@@ -145,8 +146,7 @@ const Globe = () => {
   }, []);
 
   return (
-    <section className="d-block globe_main position-relative pb-5">
-      <div className="container-xxl">
+    <div className="d-block globe_main position-relative pb-5">
         <div ref={globeContainerRef} className="globe-container"></div>
         <div className="d-block globe_dark">
           <img
@@ -154,9 +154,8 @@ const Globe = () => {
             src={require("../assets/images/globe-s.png")}
             alt="globe"
           />
-        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

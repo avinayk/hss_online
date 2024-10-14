@@ -7,7 +7,6 @@ import Globe from '../components/Globe'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
-import { Tabs, Tab } from 'react-bootstrap'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -69,6 +68,35 @@ export default function Home() {
       }
     ]
   }
+  const logo = {
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    speed: 8000,
+    pauseOnHover: false,
+    autoplaySpeed: 500,
+    autoplay: true,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   const [letters, setLetters] = useState([])
 
   useEffect(() => {
@@ -76,6 +104,8 @@ export default function Home() {
     const splitText = text.split('')
     setLetters(splitText)
   }, [])
+
+
   return (
     <div>
       <Header />
@@ -98,7 +128,7 @@ export default function Home() {
           <div className='d-flex flex-column justify-content-center py-5 position-relative gap-5 align-items-center'>
             <div className='d-flex flex-column gap-2 justify-content-center align-items-center'>
               <h1>
-                hydraulic <br /> solutions <br /> and sales
+                Hydraulic <br /> Solutions <br /> and Sales
               </h1>
               <h2>leaders in hydraulic excellence</h2>
             </div>
@@ -151,13 +181,13 @@ export default function Home() {
       <section className='main_tabs py-5'>
         <div className='container-xxl'>
           <ul
-            class='nav nav-tabs justify-content-center '
+            className='nav nav-tabs justify-content-center '
             id='myTab'
             role='tablist'
           >
-            <li class='nav-item' role='presentation'>
+            <li className='nav-item' role='presentation'>
               <button
-                class='nav-link active'
+                className='nav-link active'
                 id='home-tab'
                 data-bs-toggle='tab'
                 data-bs-target='#home-tab-pane'
@@ -169,9 +199,9 @@ export default function Home() {
                 Products
               </button>
             </li>
-            <li class='nav-item' role='presentation'>
+            <li className='nav-item' role='presentation'>
               <button
-                class='nav-link'
+                className='nav-link'
                 id='profile-tab'
                 data-bs-toggle='tab'
                 data-bs-target='#profile-tab-pane'
@@ -183,9 +213,9 @@ export default function Home() {
                 Services
               </button>
             </li>
-            <li class='nav-item' role='presentation'>
+            <li className='nav-item' role='presentation'>
               <button
-                class='nav-link'
+                className='nav-link'
                 id='contact-tab'
                 data-bs-toggle='tab'
                 data-bs-target='#contact-tab-pane'
@@ -198,9 +228,9 @@ export default function Home() {
               </button>
             </li>
           </ul>
-          <div class='tab-content' id='myTabContent'>
+          <div className='tab-content' id='myTabContent'>
             <div
-              class='tab-pane fade show active'
+              className='tab-pane fade show active'
               id='home-tab-pane'
               role='tabpanel'
               aria-labelledby='home-tab'
@@ -504,7 +534,7 @@ export default function Home() {
               </Slider>
             </div>
             <div
-              class='tab-pane fade'
+              className='tab-pane fade'
               id='profile-tab-pane'
               role='tabpanel'
               aria-labelledby='profile-tab'
@@ -641,7 +671,7 @@ export default function Home() {
               </Slider>
             </div>
             <div
-              class='tab-pane fade'
+              className='tab-pane fade'
               id='contact-tab-pane'
               role='tabpanel'
               aria-labelledby='contact-tab'
@@ -751,7 +781,7 @@ export default function Home() {
       </section>
       <section className='service_main d-block py-5'>
         <div className='container-xxl h-100 pt-5'>
-          <div class='row h-100 gy-5'>
+          <div className='row h-100 gy-5'>
             <div className='col-xl-6 '>
               <div className='d-flex justify-content-start h-100 align-items-center'>
                 <h3>
@@ -761,9 +791,9 @@ export default function Home() {
               </div>
             </div>
             <div className='col-xl-6 '>
-              <div class='service_main_container'>
+              <div className='service_main_container'>
                 <div className='d-flex flex-sm-row flex-column align-items-center justify-content-end gap-3'>
-                  <Link to='/' class='service1 ser-img'>
+                  <Link to='/' className='service1 ser-img'>
                     <img
                       className='w-100 h-100'
                       src={require('../assets/images/s5.jfif')}
@@ -778,7 +808,7 @@ export default function Home() {
                       </p>
                     </div>
                   </Link>
-                  <Link to='/' class='service2 ser-img'>
+                  <Link to='/' className='service2 ser-img'>
                     <img
                       className='w-100 h-100'
                       src={require('../assets/images/s3.jfif')}
@@ -795,7 +825,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className='d-flex flex-sm-row flex-column align-items-start justify-content-center  p-0 gap-3'>
-                  <Link to='/' class='service3 ser-img'>
+                  <Link to='/' className='service3 ser-img'>
                     <img
                       className='w-100 h-100'
                       src={require('../assets/images/s4.jfif')}
@@ -809,7 +839,7 @@ export default function Home() {
                       </p>
                     </div>
                   </Link>
-                  <Link to='/' class='service4 ser-img'>
+                  <Link to='/' className='service4 ser-img'>
                     <img
                       className='w-100 h-100'
                       src={require('../assets/images/s2.jfif')}
@@ -825,7 +855,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className='d-flex flex-sm-row flex-column align-items-center justify-content-end gap-3'>
-                  <Link to='/' class='service5 ser-img'>
+                  <Link to='/' className='service5 ser-img'>
                     <img
                       className='w-100 h-100'
                       src={require('../assets/images/s1.jfif')}
@@ -839,7 +869,7 @@ export default function Home() {
                       </p>
                     </div>
                   </Link>
-                  <Link to='/' class='service6 ser-img'>
+                  <Link to='/' className='service6 ser-img'>
                     <img
                       className='w-100 h-100'
                       src={require('../assets/images/s1.jfif')}
@@ -905,122 +935,115 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='d-block simple_process py-5'>
-        <div className='container-xl'>
-          <div className='row gy-5'>
-            <div className='col-12'>
-              <div className='d-flex flex-column gap-3 simple_process_head'>
-                <h5>
-                  Our Simple Process to Get You the Best Hydraulic Solutions
-                </h5>
-                <p>
-                  We’ve streamlined our process to make it easy for you to get
-                  the hydraulic equipment and support you need, without any
-                  hassle. Here’s how it works
-                </p>
+      <section className="span_guage d-block pb-5">
+        <div className="container-xxl">
+          <div className="row gy-md-4 align-items-center">
+            <div className="col-md-6">
+              <h4 > We Sell Span Gauges at Hydraulic Solutions</h4>
+            </div>
+            <div className="col-md-6">
+              <div className="d-flex flex-column gap-1">
+                <div className="guage1 d-flex justify-content-start align-items-start">
+                  <div className="guage1-img d-block">
+                    <img
+                      className='w-100 h-100'
+                      src={require('../assets/images/guage1.png')}
+                      alt='img'
+                    />
+                  </div>
+                </div>
+                <div className="guage2 d-flex justify-content-end align-items-end">
+                  <div className="guage2-img d-block">
+                    <img
+                      className='w-100 h-100'
+                      src={require('../assets/images/guage2.png')}
+                      alt='img'
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-            <div className='col-12'>
-              <ul className='d-flex flex-wrap align-items-start gap-5'>
-                <li className='d-flex align-items-start gap-3'>
-                  <div className='d-block icon_fit'>
-                    <img
-                      className='w-100 h-100'
-                      src={require('../assets/images/p4.png')}
-                      alt='logo'
-                    />
-                  </div>
-                  <div className='d-flex flex-column gap-2'>
-                    <h6>Consultation & Needs Assessment</h6>
-                    <p>
-                      Reach out to us, and our expert team will discuss your
-                      specific requirements, understanding your project and
-                      equipment needs.
-                    </p>
-                  </div>
-                </li>
-                <li className='d-flex align-items-start gap-3'>
-                  <div className='d-block icon_fit'>
-                    <img
-                      className='w-100 h-100'
-                      src={require('../assets/images/p3.png')}
-                      alt='logo'
-                    />
-                  </div>
-                  <div className='d-flex flex-column gap-2'>
-                    <h6>Product Selection & Customization</h6>
-                    <p>
-                      Based on your needs, we recommend the best products from
-                      our extensive range or customise equipment to meet your
-                      exact specifications.
-                    </p>
-                  </div>
-                </li>
-                <li className='d-flex align-items-start gap-3'>
-                  <div className='d-block icon_fit'>
-                    <img
-                      className='w-100 h-100'
-                      src={require('../assets/images/p5.png')}
-                      alt='logo'
-                    />
-                  </div>
-                  <div className='d-flex flex-column gap-2'>
-                    <h6>Quotation & Approva</h6>
-                    <p>
-                      We provide a detailed, transparent quote for your review.
-                      Once you approve, we move forward with your order.
-                    </p>
-                  </div>
-                </li>
-                <li className='d-flex align-items-start gap-3'>
-                  <div className='d-block icon_fit'>
-                    <img
-                      className='w-100 h-100'
-                      src={require('../assets/images/p1.png')}
-                      alt='logo'
-                    />
-                  </div>
-                  <div className='d-flex flex-column gap-2'>
-                    <h6>Ongoing Support & Maintenance</h6>
-                    <p>
-                      Your order is processed promptly, and we arrange for fast,
-                      reliable delivery directly to your site.
-                    </p>
-                  </div>
-                </li>
-                <li className='d-flex align-items-start gap-3'>
-                  <div className='d-block icon_fit'>
-                    <img
-                      className='w-100 h-100'
-                      src={require('../assets/images/p2.png')}
-                      alt='logo'
-                    />
-                  </div>
-                  <div className='d-flex flex-column gap-2'>
-                    <h6>Order Fulfillment & Delivery</h6>
-                    <p>
-                      After delivery, we offer continued support, including
-                      maintenance services and expert advice to ensure your
-                      equipment runs smoothly.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <div className='d-flex justify-content-center pt-5 align-items-center'>
-                <button className='start_btn'>Get Started Today</button>
+            <div className="col-12">
+              <div className="d-flex guage_btn flex-column justify-content-center align-items-center gap-3">
+                <Link className="learn_btn" to="/learnpdf">Learn More</Link>
+                <Link className="contact_btn" to="/contact">Contact us Now</Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className='d-block why_hss'>
+      <section className='d-block skip_faster_main '>
         <div className='container-xxl'>
           <div className='d-flex flex-column skip_faster'>
             <h5>Ship</h5>
             <ParallaxText />
           </div>
+          <div className="row gy-4 align-items-center">
+            <div className="col-md-6">
+              <div className="map_container d-flex flex-column align-items-start gap-3">
+                <div className="d-flex flex-sm-row flex-column align-items-center gap-3">
+                  <div className="mapbox left_border">
+                    <div className="d-flex flex-column gap-2">
+                      <div className="d-block mapinfo_icon mb-1">
+                        <img
+                          className='w-100 h-100'
+                          src={require('../assets/images/contact_time.png')}
+                          alt='img'
+                        />
+                      </div>
+                      <h5>Map out key content</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+                  <div className="mapbox">
+                    <div className="d-flex flex-column gap-2">
+                      <div className="d-block mapinfo_icon mb-1">
+                        <img
+                          className='w-100 h-100'
+                          src={require('../assets/images/contact_time.png')}
+                          alt='img'
+                        />
+                      </div>
+                      <h5>Map out key content</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="d-flex flex-sm-row flex-column align-items-center gap-3">
+                  <div className="mapbox left_border">
+                    <div className="d-flex flex-column gap-2">
+                      <div className="d-block mapinfo_icon mb-1">
+                        <img
+                          className='w-100 h-100'
+                          src={require('../assets/images/contact_time.png')}
+                          alt='img'
+                        />
+                      </div>
+                      <h5>Map out key content</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+                  <div className="mapbox">
+                    <div className="d-flex flex-column gap-2">
+                      <div className="d-block mapinfo_icon mb-1">
+                        <img
+                          className='w-100 h-100'
+                          src={require('../assets/images/contact_time.png')}
+                          alt='img'
+                        />
+                      </div>
+                      <h5>Map out key content</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <Globe />
+            </div>
+          </div>
         </div>
-        <Globe />
       </section>
       <section className='receive d-block py-5'>
         <div className='container-xxl'>
@@ -1234,13 +1257,13 @@ export default function Home() {
                 </h4>
 
                 <ul
-                  class='nav nav-tabs gap-4 justify-content-center '
+                  className='nav nav-tabs gap-4 justify-content-center '
                   id='myTab1'
                   role='tablist'
                 >
-                  <li class='nav-item' role='presentation'>
+                  <li className='nav-item' role='presentation'>
                     <button
-                      class='nav-link active'
+                      className='nav-link active'
                       id='home-tab1'
                       data-bs-toggle='tab'
                       data-bs-target='#home-tab-pane1'
@@ -1252,9 +1275,9 @@ export default function Home() {
                       Blog
                     </button>
                   </li>
-                  <li class='nav-item' role='presentation'>
+                  <li className='nav-item' role='presentation'>
                     <button
-                      class='nav-link'
+                      className='nav-link'
                       id='profile-tab1'
                       data-bs-toggle='tab'
                       data-bs-target='#profile-tab-pane1'
@@ -1267,9 +1290,9 @@ export default function Home() {
                     </button>
                   </li>
                 </ul>
-                <div class='tab-content' id='myTabContent1'>
+                <div className='tab-content' id='myTabContent1'>
                   <div
-                    class='tab-pane fade show active'
+                    className='tab-pane fade show active'
                     id='home-tab-pane1'
                     role='tabpanel'
                     aria-labelledby='home-tab1'
@@ -1385,7 +1408,7 @@ export default function Home() {
 
                   </div>
                   <div
-                    class='tab-pane fade'
+                    className='tab-pane fade'
                     id='profile-tab-pane1'
                     role='tabpanel'
                     aria-labelledby='profile-tab1'
@@ -1505,45 +1528,45 @@ export default function Home() {
         </div>
       </section>
       <Productive />
-      {/* <section className="d-block logo_slide">
+      <section className="d-block logo_slide">
         <div className="container-xxl">
           <Slider className="logo_slider " {...logo}>
-            <div class="d-block slider_image">
+            <div className="d-block slider_image">
               <img
                 className="w-100 h-100"
                 src={require("../assets/images/broadarrow-Logo.png")}
                 alt="img"
               />
             </div>
-            <div class="d-block slider_image">
+            <div className="d-block slider_image">
               <img
                 className="w-100 h-100"
                 src={require("../assets/images/jl-logo.png")}
                 alt="img"
               />
             </div>
-            <div class="d-block slider_image">
+            <div className="d-block slider_image">
               <img
                 className="w-100 h-100"
                 src={require("../assets/images/minotaurlogo.png")}
                 alt="img"
               />
             </div>
-            <div class="d-block slider_image">
+            <div className="d-block slider_image">
               <img
                 className="w-100 h-100"
                 src={require("../assets/images/walc.png")}
                 alt="img"
               />
             </div>
-            <div class="d-block slider_image">
+            <div className="d-block slider_image">
               <img
                 className="w-100 h-100"
                 src={require("../assets/images/minotaurlogo.png")}
                 alt="img"
               />
             </div>
-            <div class="d-block slider_image">
+            <div className="d-block slider_image">
               <img
                 className="w-100 h-100"
                 src={require("../assets/images/walc.png")}
@@ -1552,7 +1575,7 @@ export default function Home() {
             </div>
           </Slider>
         </div>
-      </section> */}
+      </section>
       <Footer />
     </div>
   )

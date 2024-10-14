@@ -193,9 +193,9 @@ header {
     line-height: 75px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.53);
-
+    font-family: $hfont;
     @include sm {
-      font-size: 54px;
+      font-size: 50px;
       line-height: 65px;
     }
   }
@@ -207,7 +207,7 @@ header {
     color: rgba(139, 36, 83, 1);
 
     @include sm {
-      font-size: 38px;
+      font-size: 34px;
       line-height: 48px;
     }
   }
@@ -382,8 +382,9 @@ header {
     color: $primary;
 
     @include md {
-      font-size: 40px;
+      font-size: 36px;
       line-height: 44px;
+      text-align: center;
     }
   }
 
@@ -553,7 +554,7 @@ header {
     top: 0;
     right: 0;
   }
-
+ 
   h4 {
     height: 174px;
     display: flex;
@@ -1129,65 +1130,94 @@ footer {
     }
   }
 }
-
-.skip_faster {
-  .parallaxtext {
-    padding: 0;
-    background: linear-gradient(90deg, #8b2453 0%, #4d4cdf 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1 !important;
-    justify-content: end;
-
-    li {
-      list-style: none;
-      transform-origin: center;
-      transition: all 0.9s ease-out;
-      transform: scale(1, 1);
+.skip_faster_main {
+  .skip_faster {
+    .parallaxtext {
+      padding: 0;
+      background: linear-gradient(90deg, #8b2453 0%, #4d4cdf 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       opacity: 1 !important;
+      justify-content: end;
 
-      h4 {
-        font-size: 200px;
-        font-weight: 600;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        line-height: 200px;
-        width: fit-content;
+      li {
+        list-style: none;
+        transform-origin: center;
+        transition: all 0.9s ease-out;
+        transform: scale(1, 1);
         opacity: 1 !important;
 
-        @include sm {
-          font-size: 130px;
-          line-height: 140px;
-        }
+        h4 {
+          font-size: 200px;
+          font-weight: 600;
+          line-height: 200px;
+          width: fit-content;
+          opacity: 1 !important;
+          background: linear-gradient(90deg, #2a2979 0%, #4d4cdf 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          @include sm {
+            font-size: 130px;
+            line-height: 140px;
+          }
 
-        @include xs {
-          font-size: 100px;
-          line-height: 120px;
+          @include xs {
+            font-size: 100px;
+            line-height: 120px;
+          }
         }
       }
     }
   }
+  .map_container {
+    .mapinfo_icon {
+      width: 35px;
+      height: 35px;
+      img {
+        object-fit: contain;
+      }
+    }
+    .left_border{
+      border-right:2px solid #00000047;
+      @include sm{
+        border: none ;
+      }
+    }
+    h5 {
+      font-size: 20px !important;
+      font-weight: 500;
+      color: #000;
+      margin: 0;
+    }
+    p {
+      font-size: 16px !important;
+      font-weight: 500;
+      color: #000000b3;
+      margin: 0;
+    }
+  }
 }
-
 .globe_main {
   .globe-container {
     height: 100%;
     width: 100%;
     canvas {
       width: 100% !important;
-      height: 100% !important;
+      height: 500px !important;
+      object-fit: cover;
     }
   }
 
   .globe_dark {
     position: absolute;
-    top: 15%;
-    right: 15%;
+    top: -30px;
+    right: 22px;
     width: 92px;
     animation: globe1 10s linear infinite;
 
     @include sm {
       width: 50px;
+      top: 0px;
     }
   }
 }
@@ -2600,6 +2630,41 @@ span {
     }
     ul {
       padding: 0;
+    }
+  }
+}
+
+.span_guage {
+  h4 {
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(42, 41, 121, 1) 0%, rgba(77, 76, 223, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -60px;
+    @include sm {
+      font-size: 35px;
+      text-align: center;
+      margin-top: 0px !important;
+    }
+  }
+  .learn_btn {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+  }
+  .contact_btn {
+    background: #000;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    padding: 7px 40px;
+    border-radius: 50px;
+  }
+  .guage_btn {
+    margin-top: -135px;
+    @include sm {
+      margin: 0 !important;
     }
   }
 }
