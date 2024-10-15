@@ -938,11 +938,11 @@ export default function Home() {
       <section className="span_guage d-block pb-5">
         <div className="container-xxl">
           <div className="row gy-md-4 align-items-center">
-            <div className="col-md-9 mx-auto">
-              <div className="d-flex flex-column gap-3 justify-content-center align-items-center guage_haed">
-                <h3>Reliable SPAN Gauges for Precision Measurement</h3>
+            <div className="col-md-10 mx-auto">
+              <div className="d-flex flex-column gap-2 justify-content-center align-items-center guage_haed">
+                <h3>"Reliable SPAN Gauges for Precision Measurement"</h3>
                 <p>
-                Discover high-performance SPAN gauges, engineered for accurate and reliable pressure measurement in demanding environments. Ideal for subsea, marine, and industrial applications.
+                "Discover high-performance SPAN gauges, engineered for accurate and reliable pressure measurement in demanding environments. Ideal for subsea, marine, and industrial applications."
                 </p>
               </div>
             </div>
