@@ -68,34 +68,34 @@ export default function Home() {
       }
     ]
   }
-  const logo = {
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: false,
-    infinite: true,
-    speed: 8000,
-    pauseOnHover: false,
-    autoplaySpeed: 500,
-    autoplay: true,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // const logo = {
+  //   slidesToShow: 5,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 8000,
+  //   pauseOnHover: false,
+  //   autoplaySpeed: 500,
+  //   autoplay: true,
+  //   cssEase: "linear",
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
   const [letters, setLetters] = useState([])
 
@@ -938,6 +938,14 @@ export default function Home() {
       <section className="span_guage d-block pb-5">
         <div className="container-xxl">
           <div className="row gy-md-4 align-items-center">
+            <div className="col-md-9 mx-auto">
+              <div className="d-flex flex-column gap-3 justify-content-center align-items-center guage_haed">
+                <h3>Reliable SPAN Gauges for Precision Measurement</h3>
+                <p>
+                Discover high-performance SPAN gauges, engineered for accurate and reliable pressure measurement in demanding environments. Ideal for subsea, marine, and industrial applications.
+                </p>
+              </div>
+            </div>
             <div className="col-md-6">
               <h4 > We Sell Span Gauges at Hydraulic Solutions</h4>
             </div>
@@ -1528,7 +1536,7 @@ export default function Home() {
         </div>
       </section>
       <Productive />
-      <section className="d-block logo_slide">
+      {/* <section className="d-block logo_slide">
         <div className="container-xxl">
           <Slider className="logo_slider " {...logo}>
             <div className="d-block slider_image">
@@ -1575,7 +1583,7 @@ export default function Home() {
             </div>
           </Slider>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </div>
   )

@@ -554,7 +554,7 @@ header {
     top: 0;
     right: 0;
   }
- 
+
   h4 {
     height: 174px;
     display: flex;
@@ -1177,10 +1177,10 @@ footer {
         object-fit: contain;
       }
     }
-    .left_border{
-      border-right:2px solid #00000047;
-      @include sm{
-        border: none ;
+    .left_border {
+      border-right: 2px solid #00000047;
+      @include sm {
+        border: none;
       }
     }
     h5 {
@@ -2635,6 +2635,25 @@ span {
 }
 
 .span_guage {
+  .guage_haed {
+    h3 {
+      font-size: 48px;
+      line-height: 58px;
+      font-weight: 600;
+      background: linear-gradient(90deg, #2a2979 0%, #4d4cdf 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin: 0;
+    }
+    p{
+      font-size: 20px;
+      font-weight: 400;
+      color: #000000db;
+      text-align: center;
+      margin: 0;
+    }
+  }
   h4 {
     font-size: 48px;
     font-weight: 700;

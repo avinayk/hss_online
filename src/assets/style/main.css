@@ -2357,6 +2357,23 @@ span {
   padding: 0;
 }
 
+.span_guage .guage_haed h3 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #2a2979 0%, #4d4cdf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 0;
+}
+.span_guage .guage_haed p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8588235294);
+  text-align: center;
+  margin: 0;
+}
 .span_guage h4 {
   font-size: 48px;
   font-weight: 700;
