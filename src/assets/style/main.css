@@ -2373,6 +2373,7 @@ span {
   color: rgba(0, 0, 0, 0.8588235294);
   text-align: center;
   margin: 0;
+  text-wrap: balance;
 }
 .span_guage h4 {
   font-size: 48px;
