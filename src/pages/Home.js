@@ -938,18 +938,7 @@ export default function Home() {
       <section className="span_guage d-block pb-5">
         <div className="container-xxl">
           <div className="row gy-md-4 align-items-center">
-            <div className="col-md-10 mx-auto">
-              <div className="d-flex flex-column gap-2 justify-content-center align-items-center guage_haed">
-                <h3>"Reliable SPAN Gauges for Precision Measurement"</h3>
-                <p>
-                "Discover high-performance SPAN gauges, engineered for accurate and reliable pressure measurement in demanding environments. Ideal for subsea, marine, and industrial applications."
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <h4 > We Sell Span Gauges at Hydraulic Solutions</h4>
-            </div>
-            <div className="col-md-6">
+          <div className="col-md-6">
               <div className="d-flex flex-column gap-1">
                 <div className="guage1 d-flex justify-content-start align-items-start">
                   <div className="guage1-img d-block">
@@ -971,10 +960,18 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-12">
+            <div className="col-md-6">
+              <div className="d-flex flex-column gap-5">
+            <div className="d-flex flex-column gap-2 justify-content-center align-items-center guage_haed">
+                <h3>"Reliable SPAN Gauges for Precision Measurement"</h3>
+                <p>
+                "Discover high-performance SPAN gauges, engineered for accurate and reliable pressure measurement in demanding environments. Ideal for subsea, marine, and industrial applications."
+                </p>
+              </div>
               <div className="d-flex guage_btn flex-column justify-content-center align-items-center gap-3">
                 <Link className="learn_btn" to="/learnpdf">Learn More</Link>
                 <Link className="contact_btn" to="/contact">Contact us Now</Link>
+              </div>
               </div>
             </div>
           </div>
