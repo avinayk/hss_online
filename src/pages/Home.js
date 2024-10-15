@@ -803,8 +803,7 @@ export default function Home() {
                     <div className='ser_text'>
                       <h5>Marine </h5>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                      Offering specialized hydraulic systems designed for the demands of marine environments.
                       </p>
                     </div>
                   </Link>
@@ -818,8 +817,7 @@ export default function Home() {
                     <div className='ser_text'>
                       <h5>Engineering </h5>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                      Supporting engineering projects with precise and efficient hydraulic machinery and services.
                       </p>
                     </div>
                   </Link>
@@ -834,8 +832,7 @@ export default function Home() {
                     <div className='ser_text'>
                       <h5>Mining</h5>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                      Providing durable hydraulic solutions that stand up to the toughest mining conditions.
                       </p>
                     </div>
                   </Link>
@@ -848,8 +845,7 @@ export default function Home() {
                     <div className='ser_text'>
                       <h5>Agriculture</h5>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                      Enhancing agricultural productivity with reliable, high-performance hydraulic equipment.
                       </p>
                     </div>
                   </Link>
@@ -864,8 +860,7 @@ export default function Home() {
                     <div className='ser_text'>
                       <h5>Manufacturing</h5>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                      Boosting manufacturing efficiency with hydraulic solutions tailored for industrial applications.
                       </p>
                     </div>
                   </Link>
@@ -878,8 +873,7 @@ export default function Home() {
                     <div className='ser_text'>
                       <h5>Waste Management</h5>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                      Powering waste management operations with equipment that ensures safe and efficient handling.
                       </p>
                     </div>
                   </Link>
@@ -938,7 +932,7 @@ export default function Home() {
       <section className="span_guage d-block pb-5">
         <div className="container-xxl">
           <div className="row gy-md-4 align-items-center">
-          <div className="col-md-6">
+            <div className="col-md-6">
               <div className="d-flex flex-column gap-1">
                 <div className="guage1 d-flex justify-content-start align-items-start">
                   <div className="guage1-img d-block">
@@ -962,16 +956,16 @@ export default function Home() {
             </div>
             <div className="col-md-6">
               <div className="d-flex flex-column gap-5">
-            <div className="d-flex flex-column gap-2 justify-content-center align-items-center guage_haed">
-                <h3>"Reliable SPAN Gauges for Precision Measurement"</h3>
-                <p>
-                "Discover high-performance SPAN gauges, engineered for accurate and reliable pressure measurement in demanding environments. Ideal for subsea, marine, and industrial applications."
-                </p>
-              </div>
-              <div className="d-flex guage_btn flex-column justify-content-center align-items-center gap-3">
-                <Link className="learn_btn" to="/learnpdf">Learn More</Link>
-                <Link className="contact_btn" to="/contact">Contact us Now</Link>
-              </div>
+                <div className="d-flex flex-column gap-2 justify-content-center align-items-center guage_haed">
+                  <h3>"Reliable SPAN Gauges for Precision Measurement"</h3>
+                  <p>
+                    "Discover high-performance SPAN gauges, engineered for accurate and reliable pressure measurement in demanding environments. Ideal for subsea, marine, and industrial applications."
+                  </p>
+                </div>
+                <div className="d-flex guage_btn flex-column justify-content-center align-items-center gap-3">
+                  <Link className="learn_btn" to="/learnpdf">Learn More</Link>
+                  <Link className="contact_btn" to="/contact">Contact us Now</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -986,59 +980,65 @@ export default function Home() {
           <div className="row gy-4 align-items-center">
             <div className="col-md-6">
               <div className="map_container d-flex flex-column align-items-start gap-3">
-                <div className="d-flex flex-sm-row flex-column align-items-center gap-3">
-                  <div className="mapbox left_border">
-                    <div className="d-flex flex-column gap-2">
-                      <div className="d-block mapinfo_icon mb-1">
-                        <img
-                          className='w-100 h-100'
-                          src={require('../assets/images/contact_time.png')}
-                          alt='img'
-                        />
+                <div className="row flex-sm-row flex-column align-items-center gy-3">
+                  <div className="col-md-6">
+                    <div className="mapbox left_border px-1">
+                      <div className="d-flex flex-column gap-2">
+                        <div className="d-block mapinfo_icon mb-1">
+                          <img
+                            className='w-100 h-100'
+                            src={require('../assets/images/ship3.png')}
+                            alt='img'
+                          />
+                        </div>
+                        <h5>Fast & Reliable Delivery</h5>
+                        <p>Count on us to deliver your equipment quickly and safely, keeping your project on schedule.</p>
                       </div>
-                      <h5>Map out key content</h5>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                   </div>
-                  <div className="mapbox">
-                    <div className="d-flex flex-column gap-2">
-                      <div className="d-block mapinfo_icon mb-1">
-                        <img
-                          className='w-100 h-100'
-                          src={require('../assets/images/contact_time.png')}
-                          alt='img'
-                        />
+                  <div className="col-md-6">
+                    <div className="mapbox px-1">
+                      <div className="d-flex flex-column gap-2">
+                        <div className="d-block mapinfo_icon mb-1">
+                          <img
+                            className='w-100 h-100'
+                            src={require('../assets/images/ship5.png')}
+                            alt='img'
+                          />
+                        </div>
+                        <h5>Nationwide Coverage</h5>
+                        <p>We ship to all locations across Australia, ensuring you have access to our equipment wherever you are.</p>
                       </div>
-                      <h5>Map out key content</h5>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                   </div>
-                </div>
-                <div className="d-flex flex-sm-row flex-column align-items-center gap-3">
-                  <div className="mapbox left_border">
-                    <div className="d-flex flex-column gap-2">
-                      <div className="d-block mapinfo_icon mb-1">
-                        <img
-                          className='w-100 h-100'
-                          src={require('../assets/images/contact_time.png')}
-                          alt='img'
-                        />
+                  <div className="col-md-6">
+                    <div className="mapbox left_border px-1">
+                      <div className="d-flex flex-column gap-2">
+                        <div className="d-block mapinfo_icon mb-1">
+                          <img
+                            className='w-100 h-100'
+                            src={require('../assets/images/ship4.png')}
+                            alt='img'
+                          />
+                        </div>
+                        <h5>Secure Packaging</h5>
+                        <p>Your equipment is carefully packed and protected to arrive in perfect condition, ready for immediate use.</p>
                       </div>
-                      <h5>Map out key content</h5>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                   </div>
-                  <div className="mapbox">
-                    <div className="d-flex flex-column gap-2">
-                      <div className="d-block mapinfo_icon mb-1">
-                        <img
-                          className='w-100 h-100'
-                          src={require('../assets/images/contact_time.png')}
-                          alt='img'
-                        />
+                  <div className="col-md-6">
+                    <div className="mapbox px-1">
+                      <div className="d-flex flex-column gap-2">
+                        <div className="d-block mapinfo_icon mb-1">
+                          <img
+                            className='w-100 h-100'
+                            src={require('../assets/images/ship1.png')}
+                            alt='img'
+                          />
+                        </div>
+                        <h5>Real-Time Tracking</h5>
+                        <p>Stay updated with real-time tracking, giving you peace of mind and full visibility of your shipment’s progress.</p>
                       </div>
-                      <h5>Map out key content</h5>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                   </div>
                 </div>
