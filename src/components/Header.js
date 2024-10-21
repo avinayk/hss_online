@@ -106,37 +106,37 @@ export default function Header() {
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M182.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" /></svg>
                     </li>
                     <li>
-                      <Link className="product_item nav-link" to="/fleet-hire">
+                      <Link className="product_item nav-link" to="/fleet-info/hydraulic-power-unit-2">
                         Hydraulic Power Unit 2
                       </Link>
                     </li>
                     <li>
-                      <Link className="product_item nav-link" to="/fleet-hire">
+                      <Link className="product_item nav-link" to="/fleet-info/hydraulic-power-unit-3">
                         Hydraulic Power Unit 3
                       </Link>
                     </li>
                     <li>
-                      <Link className="product_item nav-link" to="/fleet-hire">
+                      <Link className="product_item nav-link" to="/fleet-info/hydraulic-power-unit-4">
                         Hydraulic Power Unit 4
                       </Link>
                     </li>
                     <li>
-                      <Link className="product_item nav-link" to="/fleet-hire">
+                      <Link className="product_item nav-link" to="/fleet-info/hydraulic-power-unit-5">
                         Hydraulic Power Unit 5
                       </Link>
                     </li>
                     <li>
-                      <Link className="product_item nav-link" to="/fleet-hire">
+                      <Link className="product_item nav-link" to="/fleet-info/flushing-unit">
                         HSS OFU 3 Fluid Transfer / Flushing Unit
                       </Link>
                     </li>
                     <li>
-                      <Link className="product_item nav-link" to="/fleet-hire">
+                      <Link className="product_item nav-link" to="/fleet-info/hss-accumulator">
                         HSS Accumulator Intensifier Unit
                       </Link>
                     </li>
                     <li>
-                      <Link className="product_item nav-link" to="/fleet-hire">
+                      <Link className="product_item nav-link" to="/fleet-info/hss-oft20-offline">
                         HSS OFT20 Offline Filtration Trolley
                       </Link>
                     </li>
