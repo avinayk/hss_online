@@ -7,12 +7,11 @@ const ParallaxText = () => {
 
     gsap.registerPlugin(ScrollTrigger);
 
-
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".parallaxtext",
-        start: "10% 43%",
-        end: "90% 60%",
+        start: "20% 70%",
+        end: "90% 50%",
         scrub: true,
         // markers: true, 
       },
@@ -23,17 +22,24 @@ const ParallaxText = () => {
       {
         y: -200, 
         opacity: 0, 
-        stagger: 1, 
+        stagger: 1,
+        transformOrigin: "center",
+        transition: "all 0.9s ease-out",
+        transform: "scale(1, 1)",
+        duration: 3, 
+        ease: "circ.inOut",
       },
       {
         y: 0, 
         opacity: 1, 
-        duration: 1,
-        stagger: 0.5, 
+        transformOrigin: "center",
+        transition: "all 0.9s ease-out",
+        transform: "scale(1, 1)",
+        duration: 3,
+        stagger: 1, 
         ease: "circ.out",
       }
     );
-
 
     return () => {
       tl1.kill();
