@@ -973,8 +973,8 @@ export default function Home() {
       </section>
       <section className='d-block skip_faster_main '>
         <div className='container-xxl'>
-          <div className='d-flex flex-md-row flex-column align-items-md-center align-items-start gap-3 justify-content-between skip_faster'>
-            <h5>Ship</h5>
+          <div className='d-flex flex-md-row flex-column align-items-center gap-md-5 justify-content-center skip_faster'>
+            <h5>Deliver</h5>
             <ParallaxText />
           </div>
           <div className="row gy-4 align-items-center">

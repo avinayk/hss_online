@@ -1088,13 +1088,13 @@ footer .top_btn p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 1199.98px) {
   .skip_faster_main .skip_faster .parallaxtext li h4 {
     font-size: 130px;
     line-height: 140px;
   }
 }
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 991.98px) {
   .skip_faster_main .skip_faster .parallaxtext li h4 {
     font-size: 100px;
     line-height: 120px;
@@ -1161,14 +1161,6 @@ footer .top_btn p {
     transform: rotate(360deg);
   }
 }
-.skip_faster {
-  padding: 30px 150px 100px 150px;
-}
-@media only screen and (max-width: 767.98px) {
-  .skip_faster {
-    padding: 100px 0px 0px 0px;
-  }
-}
 .skip_faster h5 {
   color: rgb(157, 157, 164);
   font-size: 200px;
@@ -1176,13 +1168,13 @@ footer .top_btn p {
   font-weight: 600;
   opacity: 1 !important;
 }
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 1199.98px) {
   .skip_faster h5 {
     font-size: 130px;
     line-height: 140px;
   }
 }
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 767.98px) {
   .skip_faster h5 {
     font-size: 100px;
     line-height: 120px;

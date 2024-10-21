@@ -1156,12 +1156,12 @@ footer {
           background: linear-gradient(90deg, #2a2979 0%, #4d4cdf 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          @include sm {
+          @include lg {
             font-size: 130px;
             line-height: 140px;
           }
-
-          @include xs {
+      
+          @include md {
             font-size: 100px;
             line-height: 120px;
           }
@@ -1233,11 +1233,6 @@ footer {
 }
 
 .skip_faster {
-  padding: 30px 150px 100px 150px;
-
-  @include sm {
-    padding: 100px 0px 0px 0px;
-  }
 
   h5 {
     color: rgba(157, 157, 164, 1);
@@ -1246,12 +1241,12 @@ footer {
     font-weight: 600;
     opacity: 1 !important;
 
-    @include sm {
+    @include lg {
       font-size: 130px;
       line-height: 140px;
     }
 
-    @include xs {
+    @include sm {
       font-size: 100px;
       line-height: 120px;
     }
