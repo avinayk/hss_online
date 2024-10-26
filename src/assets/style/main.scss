@@ -9,6 +9,11 @@ button.navbar-toggler {
     overflow: auto;
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif ;
+}
 header {
   box-shadow: 3px -4px 16px 0px $primary;
 
@@ -60,7 +65,7 @@ header {
         a {
           font-size: 16px;
           line-height: 25px;
-          font-weight: 600;
+          font-weight: 500;
           color: #000;
         }
       }
@@ -1160,7 +1165,7 @@ footer {
             font-size: 130px;
             line-height: 140px;
           }
-      
+
           @include md {
             font-size: 100px;
             line-height: 120px;
@@ -1233,7 +1238,6 @@ footer {
 }
 
 .skip_faster {
-
   h5 {
     color: rgba(157, 157, 164, 1);
     font-size: 200px;
@@ -2641,7 +2645,7 @@ span {
       text-align: center;
       margin: 0;
     }
-    p{
+    p {
       font-size: 20px;
       font-weight: 400;
       color: #000000db;

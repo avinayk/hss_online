@@ -141,13 +141,14 @@ export default function Footer() {
                 <div className="d-flex align-items-center gap-3">
                   <ul className="d-flex flex-column gap-2">
                     <li>
-                      <Link to="/">Capability Statement</Link>
+                      <Link to="/pdf/hss-brochure-compressed-min.pdf" target="_blank" view>Capability Statement
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/">Terms & Conditions</Link>
+                      <Link to="/pdf/terms-and-conditions.pdf" target="_blank" view>Terms & Conditions</Link>
                     </li>
                     <li>
-                      <Link to="/">Credit Application</Link>
+                      <Link to="/pdf/Credit-Application-Q1007-F-1I-1.pdf" target="_blank" view>Credit Application</Link>
                     </li>
                   </ul>
                   <div className="d-block ft-logo">
